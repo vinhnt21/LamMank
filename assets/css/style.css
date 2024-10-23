@@ -1,7 +1,3 @@
-body {
-  padding-top: 76px; /* Increased padding to account for larger navbar */
-}
-
 .navbar {
   padding: 10px 0;
 }
@@ -78,6 +74,10 @@ body {
 .lead {
   font-size: 1.1rem;
   color: #6c757d;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* If you want to add animation to the arrow button */
