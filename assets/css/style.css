@@ -1,0 +1,178 @@
+body {
+  padding-top: 76px; /* Increased padding to account for larger navbar */
+}
+
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+}
+
+.banner {
+  background-image: url(../imgs/banner.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 90vh; /* Reduced from 100vh */
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(2px);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+  color: #e4e4e4;
+}
+
+.banner-content h1,
+.banner-content p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 60vh;
+  }
+
+  .banner-content {
+    padding: 40px 0;
+  }
+}
+
+.decorative-square {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  left: -5%;
+  top: -20%;
+  z-index: 1;
+}
+
+.hero-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* If you want to add animation to the arrow button */
+.fa-arrow-down {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .fa-arrow-down {
+  transform: translateY(5px);
+}
+
+.process-icon-wrapper {
+  position: relative;
+  min-width: 60px;
+}
+
+.process-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.process-line {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  bottom: -40px;
+  width: 2px;
+  background-color: #dee2e6;
+  transform: translateX(-50%);
+}
+
+/* Optional hover effects */
+.process-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .process-steps {
+    padding-left: 1rem;
+  }
+
+  .process-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.review-card {
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-mark {
+  font-family: serif;
+  line-height: 1;
+  height: 80px;
+  opacity: 0.5;
+}
+
+.btn-light {
+  background-color: #f1f1f1;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-light i {
+  background-color: transparent;
+  color: #212529;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .review-card {
+    margin-bottom: 1rem;
+  }
+
+  .review-card,
+  .review-card:hover {
+    transform: none;
+  }
+
+  .quote-mark {
+    height: 60px; /* Adjusted size for smaller screens */
+  }
+}
+
+footer {
+  margin-top: -50px;
+}
